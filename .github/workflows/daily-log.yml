@@ -19,7 +19,7 @@ jobs:
     steps:
       # 1️⃣ Checkout the repo
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       # 2️⃣ Generate daily log entry with random time
       - name: Generate daily log entry with random time
