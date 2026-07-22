@@ -60,4 +60,4 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "docs: update daily dev log"
           git pull --rebase origin main
-          git push https://$PAT_TOKEN@github.com/freddychoudja/freddychoudja.git main
+          git push https://$PAT_TOKEN@github.com/freddychoudja/freddychoudjaprovider.git main
