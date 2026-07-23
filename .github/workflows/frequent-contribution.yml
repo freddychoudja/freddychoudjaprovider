@@ -32,6 +32,10 @@ jobs:
       - name: Show Git Log
         run: git log --oneline
 
+      # Sync with the latest main before changing the generated file
+      - name: Sync latest main
+        run: git pull --ff-only origin main
+
       # Update JSON file
       - name: Update contributions.json
         run: |
@@ -52,5 +56,4 @@ jobs:
           git add contributions.json
           git diff --cached --quiet && echo "No changes to commit" && exit 0
           git commit -m "Frequent contribution update"
-          git pull --rebase origin main
           git push https://$PAT_TOKEN@github.com/freddychoudja/freddychoudjaprovider.git main
