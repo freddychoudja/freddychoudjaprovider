@@ -41,7 +41,7 @@ jobs:
       # Configure Git as your account
       - name: Configure Git
         run: |
-          git config --global user.email "actions@github.com"
+          git config --global user.email "freddychoudja@gmail.com"
           git config --global user.name "freddychoudja"
 
       # Commit and push using PAT

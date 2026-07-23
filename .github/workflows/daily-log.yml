@@ -49,7 +49,7 @@ jobs:
       - name: Configure Git
         run: |
           git config user.name "freddychoudja"
-          git config user.email "actions@github.com"
+          git config user.email "freddychoudja@gmail.com"
 
       # 4️⃣ Commit and push changes using PAT
       - name: Commit and push
